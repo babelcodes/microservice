@@ -8,7 +8,7 @@ Each microservice is generally built by a full-stack team.
 
 # Key characteristics of microservices
 
-1. [Domain-Driven Design](TODO). Functional decomposition can be easily achieved using Eric Evans’s DDD approach.
+1. [Domain-Driven Design](./ddd.md). Functional decomposition can be easily achieved using Eric Evans’s DDD approach.
 1. __Single Responsibility Principle__. Each service is responsible for a single part of the functionality, and does it well.
 1. __Explicitly Published Interface__. A producer service publishes an interface that is used by a consumer service.
 4. __Independent DURS__ (Deploy, Update, Replace, Scale). Each service can be independently deployed, updated, replaced, and scaled.
@@ -44,7 +44,7 @@ Each microservice is generally built by a full-stack team.
 
 # Patterns
 
-* Use Bounded Contexts (from [DDD](TODO)) to identify candidates for microservices. The use of an anti-corruption layer is strongly recommended during the process of decomposing a monolith.
+* Use Bounded Contexts (from [DDD](./ddd.md)) to identify candidates for microservices. The use of an anti-corruption layer is strongly recommended during the process of decomposing a monolith.
 * Designing frontends for microservices
 * Use an API gateway to centralize access to microservices
 * Database design and refactorings - Unlike a monolithic application, which can be designed to use a single database, microservices should be designed to use a separate logical database for each microservice.
